@@ -44,13 +44,10 @@ const Header = () => {
           <li className="list-none border-b-8"> Home</li>
           </Link>
           <Link to="/delete" className="text-decorations">
-          <li className="list-none border-b-8">Delete</li>
-          </Link>
-          <Link to="/" className="text-decorations">
-          <li className="list-none border-b-8">Blogs</li>
+          <li className="list-none border-b-8">Delete Item</li>
           </Link>
           <Link to="/admin" className="text-decorations">
-          <li  className="list-none border-b-8">Admin</li>
+          <li  className="list-none border-b-8">Post Item</li>
           </Link>
         </form>
         </div>

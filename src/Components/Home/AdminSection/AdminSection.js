@@ -44,6 +44,7 @@ const AdminSection = () => {
 
     return (
         <div>
+            <h4 className="text-center"> <strong>Please Post Your Blogs</strong> </h4>
             <form onSubmit={handleSubmit(onSubmit)} className="admin-section">
                 <textarea className="resize border rounded border-double border-4 rounded-md" type="text" name="title" {...register("title", {required: true})} placeholder="Title*"/> <br/>
                 <textarea className="resize border rounded border-double border-4 border-light-blue-500" type="text" name="content" {...register("content", {required: true})} placeholder="Blog Content*"/><br/>

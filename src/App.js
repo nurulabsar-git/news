@@ -8,6 +8,7 @@ import AdminSection from './Components/Home/AdminSection/AdminSection';
 import ManageBlogs from './Components/Home/AdminSection/ManageBlogs';
 import TopBar from './Components/Home/Header/TopBar';
 import Home from './Components/Home/Home/Home';
+import PageError from './Components/PageError/PageError';
 import ShowDetails from './Components/ShowDetails/ShowDetails';
 
 function App() {
@@ -28,6 +29,9 @@ function App() {
       </Route>
       <Route exact path="/">
           <Home></Home>
+      </Route>
+      <Route path="*">
+      <PageError></PageError>
       </Route>
       </Switch>
       </Router>

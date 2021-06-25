@@ -28,12 +28,12 @@ const ManageBlogs = () => {
     }
     return (
         <div>
-            <h6>{manageBlogs?.length}</h6>
+            <p className="text-center"><strong>Please delete your post</strong></p>
            {
                manageBlogs?.map(each => 
-                   <section key={each?._id}>
+                   <section key={each?._id} style={{display: 'flex', justifyContent: 'space-around', margin: '10px'}}>
                     
-                    <p>{each?.title}</p>
+                    <p className="mr-0.5">{each?.title}</p>
                     <button onClick={() => {handleData(each?._id)}}><i class="fa fa-trash-o" aria-hidden="true"></i></button>
                    </section>
                )
